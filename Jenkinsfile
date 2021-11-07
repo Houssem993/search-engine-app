@@ -11,11 +11,9 @@ pipeline {
 		
 		stage("run the search engine") {
 			steps {
-				sh(returnStdout: false, script: """#!/bin/sh
-					g++ search.cpp -o search
-					chmod u=x search
-					./search
-					""".stripIndent()
+				sh( returnStdout: false, script: """#!/bin/sh
+                    echo gg
+                    """.stripIndent()
                 )
 			}
 		}
