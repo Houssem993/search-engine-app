@@ -12,7 +12,7 @@ pipeline {
 		stage("run the search engine") {
 			steps {
 				sh( returnStdout: false, script: """#!/bin/sh
-                    echo gg
+                    echo gg!
                     """.stripIndent()
                 )
 			}
