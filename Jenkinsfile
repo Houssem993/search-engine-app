@@ -3,8 +3,8 @@ pipeline {
 	stages {
 		stage("generate the test case") {
 			steps {
-				sh g++ generate.cpp -o generate
-				sh chmod u=x generate
+				sh "g++ generate.cpp -o generate"
+				sh "chmod u=x generate"
 				sh ./generate
 			}
 		}
